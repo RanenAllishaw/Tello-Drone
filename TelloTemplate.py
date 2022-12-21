@@ -44,13 +44,15 @@ recvThread.start()
 # CREATE FUNCTIONS HERE....
 
 
-print("\nFirst & Last Names")
-print("Program Name: ")
-print("Date: ")
+print("\nRanen Allishaw")
+print("Program Name: Squares & Triganles")
+print("Date: DEC/21/22")
 print("\n****CHECK YOUR TELLO WIFI ADDRESS****")
 print("\n****CHECK SURROUNDING AREA BEFORE FLIGHT****")
 ready = input('\nAre you ready to take flight: ')
 
+if ready == "no":
+    print('\noh ok')
 
 try:
     if ready.lower() == 'yes':
