@@ -58,9 +58,8 @@ try:
 
         sendmsg('command', 0)
         sendmsg('takeoff')
-        time.sleep(1)
 
-        sendmsg('right 20')
+        sendmsg('right 20', 8)
         sendmsg('left 35')
         sendmsg('up 60')
         sendmsg('forward 400')
