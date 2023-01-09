@@ -53,6 +53,12 @@ def Triangle():
         sendmsg('cw 60')
 
 
+# Circle
+def Circle():
+    sendmsg('curve 45 -25 0 45 -75 0 30')
+    sendmsg('curve -45 25 0 -45 -75 0 30')
+
+
 print("\nRanen Allishaw")
 print("Program Name: Squares & Triganles")
 print("Date: DEC/21/22")
@@ -67,7 +73,7 @@ try:
         sendmsg('command', 0)
         sendmsg('takeoff')
 
-        Square()
+        Circle()
 
         sendmsg('land')
 
