@@ -41,18 +41,18 @@ recvThread.start()
 
 # First Hoop
 def first_hoop():
-    sendmsg('up 50', 7)
-    sendmsg('forward 160', 7)
+    sendmsg('up 30', 9)
+    sendmsg('forward 180', 9)
 
 
 # Second Hoop
 def second_hoop():
-    sendmsg('go 150 25 100 100', 7)
+    sendmsg('go 160 30 50 60', 9)
 
 
 # Third Hoop
 def third_hoop():
-    sendmsg('curve 50 -50 0 50 -100 0 30')
+    sendmsg('curve 75 -75 0 75 -125 0 30')
 
 
 print("\nRanen Allishaw | Sydney Hribar")
@@ -70,8 +70,8 @@ try:
         sendmsg('takeoff')
 
         first_hoop()
-        time.sleep(2)
         second_hoop()
+        third_hoop()
 
         sendmsg('land')
 
