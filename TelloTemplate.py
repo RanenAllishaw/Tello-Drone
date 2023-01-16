@@ -38,23 +38,6 @@ def sendmsg(msg, sleep=6):
 recvThread = threading.Thread(target=recv)
 recvThread.start()
 
-
-# First Hoop
-def first_hoop():
-    sendmsg('up 30', 9)
-    sendmsg('forward 180', 9)
-
-
-# Second Hoop
-def second_hoop():
-    sendmsg('go 160 30 50 60', 9)
-
-
-# Third Hoop
-def third_hoop():
-    sendmsg('curve 75 -75 0 75 -125 0 30')
-
-
 print("\nRanen Allishaw | Sydney Hribar")
 print("Program Name: Drone Compition")
 print("Date: JAN.10.2023")
@@ -66,12 +49,18 @@ try:
     if ready.lower() == 'yes':
         print("\nStarting Drone!\n")
 
-        sendmsg('command', 0)
+        sendmsg('command', 8)
+        sendmsg('battery?')
         sendmsg('takeoff')
 
-        first_hoop()
-        second_hoop()
-        third_hoop()
+        sendmsg('up 30', 9)
+        sendmsg('forward 180', 9)
+        sendmsg('go 160 30 50 60', 9)
+        sendmsg('curve 110 110 0 110 220 0 30', 9)
+        sendmsg('cw 180', 9)
+        sendmsg('up 20', 9)
+        sendmsg('forward 140', 9)
+        sendmsg('go 160 30 -40 60', 9)
 
         sendmsg('land')
 
