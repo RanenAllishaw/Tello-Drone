@@ -51,16 +51,19 @@ try:
 
         sendmsg('command', 8)
         sendmsg('battery?')
-        sendmsg('takeoff')
+        sendmsg('takeoff', 9)
 
         sendmsg('up 30', 9)
         sendmsg('forward 180', 9)
-        sendmsg('go 160 30 50 60', 9)
-        sendmsg('curve 110 110 0 110 220 0 30', 9)
-        sendmsg('cw 180', 9)
+        sendmsg('go 160 -25 50 60', 9)
+        sendmsg('curve 110 110 0 110 220 0 30', 10)
+        sendmsg('ccw 180', 10)
         sendmsg('up 20', 9)
         sendmsg('forward 140', 9)
-        sendmsg('go 160 30 -40 60', 9)
+        sendmsg('right 25', 9)
+        sendmsg('go 160 20 -50 60', 9)
+        sendmsg('forward 100', 9)
+        sendmsg('flip b', 10)
 
         sendmsg('land')
 
