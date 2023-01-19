@@ -50,7 +50,7 @@ def Square():
 def Triangle():
     for i in range(3):
         sendmsg('forward 100')
-        sendmsg('cw 60')
+        sendmsg('cw 120')
 
 
 # Circle
@@ -73,7 +73,7 @@ try:
         sendmsg('command', 0)
         sendmsg('takeoff')
 
-        Square()
+        Triangle()
 
         sendmsg('land')
 
