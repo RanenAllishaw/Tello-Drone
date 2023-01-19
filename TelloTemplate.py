@@ -73,7 +73,7 @@ try:
         sendmsg('command', 0)
         sendmsg('takeoff')
 
-        Circle()
+        Square()
 
         sendmsg('land')
 
